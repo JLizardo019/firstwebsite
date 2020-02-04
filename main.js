@@ -50,7 +50,6 @@ function offFunction()
 {
     document.body.style.background = "url('lost.gif')";
     document.body.style.backgroundSize  =  "cover";
-    const  newElement = document.createElement("h4");
     document.body.appendChild(newElement2);
     document.body.removeChild(newElement);
     // newElement.textContent = "System Offline: Off Course.";

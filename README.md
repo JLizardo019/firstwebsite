@@ -1,7 +1,4 @@
-# firstwebsite
-Responsive website to navigator online/offline attributes
 
-
-Caution:
+# Caveat:
 
 Having issues rendering the offline mode in browser. Please download files and run locally to view.

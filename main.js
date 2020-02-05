@@ -20,20 +20,20 @@ window.onload=function()
 // newElement.textContent ="Hello from Javascript!";
 // document.body.appendChild(newElement);
 
-this.setTimeout(function(){
-  if (navigator.onLine)
+if (this.navigator.onLine)
 {
-    this.console.log("online");
-  onFunction();
-  
-}
-else
- {
-    this.console.log("offline");
-   offFunction();
- }
+  this.console.log("online");
+   onFunction();
 
-}, 100)
+}
+
+window.addEventListener("offline", function()
+{
+  this.console.log("offline");
+   offFunction();
+
+})
+ 
 
 }
 
@@ -41,13 +41,10 @@ function onFunction() {
 
     document.body.style.background = "url('ship.gif')";
     document.body.style.backgroundSize  =  "cover";
-    // newElement = document.createElement("h4");
     document.body.appendChild(newElement);
-    document.body.removeChild(newElement2);
-    // newElement.textContent = "System Online: Course trajectory activated."
-    // newElement.style.zIndex = "1";
-    // newElement.style.textAlign = "center";
-    // newElement.style.color = "white";
+    // if (document.body.)
+    // document.body.removeChild(newElement2);
+
     
   
 }
@@ -58,8 +55,4 @@ function offFunction()
     document.body.style.backgroundSize  =  "cover";
     document.body.appendChild(newElement2);
     document.body.removeChild(newElement);
-    // newElement.textContent = "System Offline: Off Course.";
-    // newElement.style.zIndex = "1";
-    // newElement.style.textAlign = "center";
-    // newElement.style.color = "white";
 }

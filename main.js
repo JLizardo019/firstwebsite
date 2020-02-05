@@ -20,15 +20,21 @@ window.onload=function()
 // newElement.textContent ="Hello from Javascript!";
 // document.body.appendChild(newElement);
 
-if (navigator.onLine)
+this.setTimeout(function(){
+  if (navigator.onLine)
 {
+    this.console.log("online");
   onFunction();
   
 }
 else
  {
+    this.console.log("offline");
    offFunction();
  }
+
+}, 100)
+
 }
 
 function onFunction() {
